@@ -1,4 +1,7 @@
-import React from 'react';
+import React,{ useState } from 'react';
+import "../App";
+import Leagues from "./Leagues";
+import Standings from "./Standings";
 
 function Content(){
     const [active, setActive] = useState(true);

@@ -24,3 +24,37 @@
   justify-content: center;
   text-align: center;
 }
+.content{
+  width:100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tabs{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.tab-leagues{
+  width: 300px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: black;
+ color: #fff;
+ height: 50px;
+ border-right: 5px solid #cccc;
+}
+.tab-standings{
+  width: 300px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: black;
+ color: #fff;
+ height: 50px;
+}
