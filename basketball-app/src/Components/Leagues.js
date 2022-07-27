@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import "../App";
+import axios from 'axios'
 function Leagues(){
     const [data, setData] = useState([]);
-    useEffect(() => {
+   useEffect(() => {
         axios
           .get("https://api-basketball.p.rapidapi.com/leagues")
           .then((response) => {
@@ -14,9 +14,14 @@ function Leagues(){
       }, []);
 
     return(
-        <div className="leagues">
-
-        </div>
-    )
+     <div className="leagues">
+    {data?.map((league) => (
+      <div key={league.id} className="league-div">
+        <img src={league.logos.light} alt="#" />
+        <h4>{league.name}</h4>
+      </div>
+    ))}
+  </div>
+)
 }
 export default Leagues;
